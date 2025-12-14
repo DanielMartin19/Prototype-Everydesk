@@ -1,0 +1,107 @@
+<Window title="EveryDesk" maximized="true"
+    xmlns:bxml="http://pivot.apache.org/bxml"
+    xmlns="org.apache.pivot.wtk">
+
+    <styles backgroundColor="#74747D"/>
+
+    <TablePane>
+        <columns>
+            <TablePane.Column width="1*"/>
+        </columns>
+        <rows>
+            <TablePane.Row height="1*">
+                
+                <BoxPane orientation="vertical" styles="{padding:30, spacing:30, fill:true}">
+
+                    <BoxPane orientation="horizontal" styles="{verticalAlignment:'center', spacing:20}">
+                        
+                        <BoxPane orientation="vertical" styles="{spacing:0, verticalAlignment:'center'}">
+                            <Label text="Every" styles="{font:'Arial Black 24', color:'#FFFFFF'}"/>
+                            <Label text="Desk" styles="{font:'Arial Black 24', color:'#FFFFFF'}"/>
+                        </BoxPane>
+                        
+                        <PushButton buttonData="SESSION 1" styles="{backgroundColor:'#74747D', color:'#FFFFFF', font:'Arial bold 12', padding:{left:15, right:15, top:8, bottom:8}, borderColor:'#FFFFFF'}"/>
+                        
+                        <PushButton buttonData="SESSION 2" styles="{backgroundColor:'#74747D', color:'#FFFFFF', font:'Arial bold 12', padding:{left:15, right:15, top:8, bottom:8}, borderColor:'#FFFFFF'}"/>
+                        
+                    </BoxPane>
+
+                    <TablePane>
+                        <columns>
+                            <TablePane.Column width="1*"/>
+                            <TablePane.Column width="-1"/>
+                        </columns>
+                        <rows>
+                            <TablePane.Row>
+                                <Border styles="{backgroundColor:'#4E8775', padding:10, cornerRadii:10, color:'#4E8775'}">
+                                    <BoxPane orientation="horizontal" styles="{verticalAlignment:'center', spacing:10}">
+                                        
+                                        <ImageView image="/icon/tandatanya.png" preferredWidth="24" preferredHeight="24" styles="{fill:true}" /> 
+                                        
+                                        <TextInput prompt="Enter Target Remote Address" 
+                                                   styles="{backgroundColor:'#4E8775', color:'#FFFFFF', borderColor:'#4E8775', font:'Arial 14'}"/>
+                                    </BoxPane>
+                                </Border>
+                                
+                                <BoxPane styles="{verticalAlignment:'center', padding:{left:15}}">
+                                    <ImageView image="/icon/pengaturan.png" preferredWidth="24" preferredHeight="24" styles="{fill:true}" />
+                                </BoxPane>
+                            </TablePane.Row>
+                        </rows>
+                    </TablePane>
+
+                    <BoxPane orientation="vertical" styles="{horizontalAlignment:'center', padding:{top:20, bottom:20}}">
+
+          <BoxPane orientation="horizontal" styles="{verticalAlignment:'center', spacing:15}">
+
+            <Label text="Your Remote Address" styles="{color:'#FFFFFF', font:'Arial 16'}"/>
+
+            <Label text="493 299 167" styles="{color:'#FFFFFF', font:'Arial bold 48'}"/>
+        
+            <ImageView image="/icon/info.png" preferredWidth="24" preferredHeight="24" styles="{fill:true}" />
+            <ImageView image="/icon/gembok.png" preferredWidth="24" preferredHeight="24" styles="{fill:true}" />
+            <ImageView image="/icon/direct.png" preferredWidth="24" preferredHeight="24" styles="{fill:true}" />
+             </BoxPane>
+         </BoxPane>
+
+                    <BoxPane orientation="horizontal" styles="{spacing:20}">
+                        <Label text="Recent Sessions" styles="{color:'#FFFFFF', font:'Arial bold 16'}"/>
+                        <Label text="Invitations" styles="{color:'#DDDDDD', font:'Arial 16'}"/>
+                        <Label text="Cross-OS" styles="{color:'#DDDDDD', font:'Arial 16'}"/>
+                    </BoxPane>
+
+                    <BoxPane orientation="horizontal" styles="{spacing:20}">
+                        <Border styles="{backgroundColor:'#222222', padding:0, cornerRadii:10, borderColor:'#222222'}">
+                            <BoxPane orientation="vertical">
+                                
+                                <Border styles="{backgroundColor:'#000000', padding:40, borderColor:'#00FF00'}">
+                                    <Label text="[ Desktop Image 1 ]" styles="{color:'#00FF00', font:'Courier 12'}"/>
+                                </Border>
+
+                                <BoxPane styles="{padding:10, horizontalAlignment:'center'}">
+                                    <ImageView image="/icon/laptop.png" preferredWidth="24" preferredHeight="24" styles="{fill:true}" />
+                                    <Label text=" 152 777 281" styles="{color:'#FFFFFF', font:'Arial 14'}"/>
+                                </BoxPane>
+                            </BoxPane>
+                        </Border>
+
+                        <Border styles="{backgroundColor:'#333333', padding:0, cornerRadii:10, borderColor:'#333333'}">
+                             <BoxPane orientation="vertical">
+                                
+                                <Border styles="{backgroundColor:'#2C2C2C', padding:40}">
+                                    <Label text="[ Desktop Image 2 ]" styles="{color:'#AAAAAA', font:'Arial 12'}"/>
+                                </Border>
+
+                                <BoxPane styles="{padding:10, horizontalAlignment:'center'}">
+                                    <ImageView image="/icon/laptop.png" preferredWidth="24" preferredHeight="24" styles="{fill:true}" />
+                                    <Label text=" 291 332 193" styles="{color:'#FFFFFF', font:'Arial 14'}"/>
+                                </BoxPane>
+                            </BoxPane>
+                        </Border>
+                    </BoxPane>
+
+                </BoxPane>
+            </TablePane.Row>
+        </rows>
+    </TablePane>
+</Window>
