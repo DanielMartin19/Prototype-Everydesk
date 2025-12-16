@@ -20,8 +20,7 @@
                             <Label text="Desk" styles="{font:'Arial Black 24', color:'#FFFFFF'}"/>
                         </BoxPane>
                         
-                        <PushButton buttonData="SESSION 1" styles="{backgroundColor:'#74747D', color:'#FFFFFF', font:'Arial bold 12', padding:{left:15, right:15, top:8, bottom:8}, borderColor:'#FFFFFF'}"/>
-                        
+                        <PushButton bxml:id="sessionButton1" buttonData="SESSION 1" styles="{backgroundColor:'#74747D', color:'#FFFFFF', font:'Arial bold 12', padding:{left:15, right:15, top:8, bottom:8}, borderColor:'#FFFFFF'}"/>                        
                         <PushButton buttonData="SESSION 2" styles="{backgroundColor:'#74747D', color:'#FFFFFF', font:'Arial bold 12', padding:{left:15, right:15, top:8, bottom:8}, borderColor:'#FFFFFF'}"/>
                         
                     </BoxPane>
@@ -74,8 +73,8 @@
                         <Border styles="{backgroundColor:'#222222', padding:0, cornerRadii:10, borderColor:'#222222'}">
                             <BoxPane orientation="vertical">
                                 
-                                <Border styles="{backgroundColor:'#000000', padding:40, borderColor:'#00FF00'}">
-                                    <Label text="[ Desktop Image 1 ]" styles="{color:'#00FF00', font:'Courier 12'}"/>
+                                <Border styles="{backgroundColor:'#000000', padding:0, borderColor:'#00FF00', thickness:2}">
+                                    <ImageView image="@icon/image_81833d.png" preferredWidth="180" preferredHeight="100" styles="{fill:true, preserveAspectRatio:false}"/>
                                 </Border>
 
                                 <BoxPane styles="{padding:10, horizontalAlignment:'center'}">

@@ -1,0 +1,111 @@
+<Window title="EveryDesk Remote Session" maximized="true"
+    xmlns:bxml="http://pivot.apache.org/bxml"
+    xmlns:content="org.apache.pivot.wtk.content"
+    xmlns="org.apache.pivot.wtk">
+
+    <content>
+        <TablePane>
+            <columns>
+                <TablePane.Column width="1*"/>   <TablePane.Column width="300"/>  </columns>
+            
+            <rows>
+                <TablePane.Row height="1*">
+                    
+                    <StackPane>
+                        <Border styles="{backgroundColor:'#505055'}"/>
+
+                        <BoxPane styles="{horizontalAlignment:'center', verticalAlignment:'center', padding:50}">
+                            <Border styles="{color:'#111111', thickness:8, cornerRadii:12, backgroundColor:'black'}">
+                                <ImageView image="@icon/image_81833d.png" 
+                                           styles="{fill:true, preserveAspectRatio:true}"
+                                           preferredHeight="550"/>
+                            </Border>
+                        </BoxPane>
+
+                        <BoxPane styles="{verticalAlignment:'top', horizontalAlignment:'left', padding:20, spacing:30}">
+                            <BoxPane orientation="vertical" styles="{spacing:0}">
+                                <Label text="EVERY" styles="{font:'Arial bold 18', color:'#FFFFFF'}"/>
+                                <Label text="DESK" styles="{font:'Arial bold 18', color:'#FFFFFF'}"/>
+                            </BoxPane>
+
+                            <BoxPane orientation="horizontal" styles="{verticalAlignment:'center', spacing:15}">
+                                <PushButton buttonData="SESSION 1" 
+                                            styles="{backgroundColor:'#2ECC71', color:'white', font:'Arial bold 12', cornerRadii:5, padding:{top:8, bottom:8, left:20, right:20}, borderClassName:'org.apache.pivot.wtk.skin.qc.SimpleBorder'}"/>
+                                <PushButton buttonData="SESSION 2" 
+                                            styles="{backgroundColor:'#808080', color:'#DDDDDD', font:'Arial bold 12', cornerRadii:5, padding:{top:8, bottom:8, left:20, right:20}, borderClassName:'org.apache.pivot.wtk.skin.qc.SimpleBorder'}"/>
+                            </BoxPane>
+                        </BoxPane>
+
+                        <BoxPane styles="{verticalAlignment:'bottom', horizontalAlignment:'center', padding:{bottom:25}}">
+                            <BoxPane orientation="horizontal" styles="{verticalAlignment:'center', spacing:15}">
+                                <Border styles="{backgroundColor:'#0078D7', padding:0, cornerRadii:0, thickness:0}">
+                                     <Label text="    " preferredWidth="35" preferredHeight="35" />
+                                </Border>
+                                <Label text="152 777 281" styles="{font:'Arial bold 42', color:'#FFFFFF'}"/>
+                                <ImageView image="@icon/direct.png" preferredWidth="24" preferredHeight="24" styles="{fill:true}"/>
+                            </BoxPane>
+                        </BoxPane>
+
+                        <BoxPane styles="{verticalAlignment:'bottom', horizontalAlignment:'right', padding:30, spacing:25}">
+                            
+                            <StackPane>
+                                <BoxPane orientation="vertical" styles="{horizontalAlignment:'center', spacing:5, verticalAlignment:'center'}">
+                                    <ImageView image="@icon/Fullscreen.png" preferredWidth="28" preferredHeight="28" styles="{fill:true}"/>
+                                    <Label text="Fullscreen" styles="{color:'white', font:'Arial 10'}"/>
+                                </BoxPane>
+                                <PushButton styles="{toolbar:true}" preferredWidth="60" preferredHeight="60">
+                                    <content:ButtonData text=" "/>
+                                </PushButton>
+                            </StackPane>
+
+                            <StackPane>
+                                <BoxPane orientation="vertical" styles="{horizontalAlignment:'center', spacing:5, verticalAlignment:'center'}">
+                                    <ImageView image="@icon/FileTransfer.png" preferredWidth="28" preferredHeight="28" styles="{fill:true}"/>
+                                    <Label text="Transfer" styles="{color:'white', font:'Arial 10'}"/>
+                                </BoxPane>
+                                <PushButton styles="{toolbar:true}" preferredWidth="60" preferredHeight="60">
+                                    <content:ButtonData text=" "/>
+                                </PushButton>
+                            </StackPane>
+
+                            <BoxPane orientation="vertical" styles="{horizontalAlignment:'center', spacing:5}">
+                                <PushButton bxml:id="disconnectButton" buttonData="Disconnect" 
+                                            styles="{backgroundColor:'#FF0000', color:'white', font:'Arial bold 12', padding:10, cornerRadii:5, borderClassName:'org.apache.pivot.wtk.skin.qc.SimpleBorder'}"/>
+                            </BoxPane>
+
+                        </BoxPane>
+                    </StackPane>
+
+                    <Border styles="{backgroundColor:'#2F3136', borderColor:'#222222', thickness:0}">
+                        <TablePane>
+                            <columns><TablePane.Column width="1*"/></columns>
+                            <rows>
+                                <TablePane.Row height="-1">
+                                    <BoxPane styles="{padding:15, backgroundColor:'#202225', horizontalAlignment:'center', fill:true}">
+                                        <Label text="SESSION CHAT" styles="{font:'Arial bold 14', color:'#FFFFFF'}"/>
+                                    </BoxPane>
+                                </TablePane.Row>
+
+                                <TablePane.Row height="1*">
+                                    <Border styles="{backgroundColor:'#36393F', borderColor:'#202225', padding:10}">
+                                        <TextArea text="[System]: Connection Established...&#10;[System]: Waiting for user input...&#10;"
+                                                  editable="false"
+                                                  styles="{color:'#43B581', backgroundColor:'#36393F', font:'Courier 12'}"/>
+                                    </Border>
+                                </TablePane.Row>
+
+                                <TablePane.Row height="-1">
+                                    <BoxPane orientation="horizontal" styles="{padding:10, backgroundColor:'#202225', fill:true, spacing:5}">
+                                        <TextInput prompt="Type message..." styles="{backgroundColor:'#40444B', color:'#FFFFFF', borderColor:'#40444B', padding:6}"/>
+                                        <PushButton buttonData="SEND" styles="{backgroundColor:'#4E8775', color:'#FFFFFF', font:'Arial bold 11', padding:{left:10, right:10}, borderClassName:'org.apache.pivot.wtk.skin.qc.SimpleBorder'}"/>
+                                    </BoxPane>
+                                </TablePane.Row>
+                            </rows>
+                        </TablePane>
+                    </Border>
+
+                </TablePane.Row>
+            </rows>
+        </TablePane>
+    </content>
+</Window>
