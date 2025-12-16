@@ -4,7 +4,7 @@
    Clone repository ini ke penyimpanan lokal Anda.
    
    ```bash
-   git clone https://github.com/Kelompok-2-Web-Pbo/Projek-Laravel-UangKas.git
+   git clone https://github.com/DanielMartin19/Prototype-Everydesk.git
     ```
 
 2. Masuk ke Direktori Buka terminal dan masuk ke folder project.
