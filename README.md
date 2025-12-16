@@ -23,4 +23,4 @@
    java -cp ".;lib/*" EveryDeskApp
     ```
 
-4. Udah deh kelar bos
+4. Selesai
